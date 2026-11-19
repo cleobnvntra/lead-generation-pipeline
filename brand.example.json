@@ -1,0 +1,8 @@
+{
+  "businessName": "Example Services",
+  "phone": "416-555-0100",
+  "website": "https://www.example.com/",
+  "signature": "Example Services Team",
+  "mailingAddress": null,
+  "offeredServices": ["junk_removal", "residential_cleaning", "commercial_cleaning", "airbnb_turnover_cleaning"]
+}

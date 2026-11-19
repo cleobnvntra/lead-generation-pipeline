@@ -1,0 +1,39 @@
+{
+  "name": "lead-generation-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Finds property managers, collects contacts from their own websites, qualifies them with a local LLM, and drafts, approves and test-sends outreach emails.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "tsx src/cli.ts",
+    "cli": "tsx src/cli.ts",
+    "add": "tsx src/cli.ts add",
+    "discover": "tsx src/cli.ts discover",
+    "crawl": "tsx src/cli.ts crawl",
+    "qualify": "tsx src/cli.ts qualify",
+    "leads": "tsx src/cli.ts leads",
+    "draft": "tsx src/cli.ts draft",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test \"test/**/*.test.ts\""
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.7.3",
+    "better-sqlite3": "^13.0.3",
+    "cheerio": "^1.2.0",
+    "domhandler": "^5.0.3",
+    "picocolors": "^1.1.1",
+    "playwright": "^1.64.0",
+    "robots-parser": "^3.0.1",
+    "tldts": "^7.4.16",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
